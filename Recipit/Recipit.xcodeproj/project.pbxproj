@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		018BE7A522E204D700F530EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018BE7A422E204D700F530EE /* AppDelegate.swift */; };
+		018BE7AF22E204D900F530EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 018BE7AE22E204D900F530EE /* Assets.xcassets */; };
+		018BE7B222E204D900F530EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018BE7B022E204D900F530EE /* LaunchScreen.storyboard */; };
+		018BE7BF22E2054100F530EE /* Recipit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 018BE7BA22E2054100F530EE /* Recipit.xcdatamodeld */; };
+		018BE7C222E2054100F530EE /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018BE7BE22E2054100F530EE /* Recipe.swift */; };
+		018BE7C722E2055E00F530EE /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018BE7C422E2055E00F530EE /* FavoriteTableViewCell.swift */; };
+		018BE7C922E2055E00F530EE /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018BE7C622E2055E00F530EE /* RecipeTableViewCell.swift */; };
+		018BE7D222E2058600F530EE /* FavoriteSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018BE7CC22E2058600F530EE /* FavoriteSelectedViewController.swift */; };
+		018BE7D322E2058600F530EE /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018BE7CD22E2058600F530EE /* RecipeListViewController.swift */; };
+		018BE7D422E2058600F530EE /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018BE7CE22E2058600F530EE /* FavoritesListViewController.swift */; };
+		018BE7D522E2058600F530EE /* RecipeSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018BE7CF22E2058600F530EE /* RecipeSelectedViewController.swift */; };
+		018BE7D622E2058600F530EE /* RecipeWeb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018BE7D022E2058600F530EE /* RecipeWeb.swift */; };
+		018BE7D722E2058600F530EE /* WhatSInYourFridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018BE7D122E2058600F530EE /* WhatSInYourFridgeViewController.swift */; };
+		018BE7DD22E20B6E00F530EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018BE7DF22E20B6E00F530EE /* Main.storyboard */; };
+		018BE80522E2156500F530EE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018BE80422E2156500F530EE /* WebKit.framework */; };
+		018BE80722E215BA00F530EE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018BE80622E215BA00F530EE /* Extensions.swift */; };
+		01DB31D422E6099A0083E163 /* RecipesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB31D322E6099A0083E163 /* RecipesData.swift */; };
+		01DB31D622E609CE0083E163 /* RecipeDetailsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB31D522E609CE0083E163 /* RecipeDetailsData.swift */; };
+		01DB31D822E60A280083E163 /* RecipeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB31D722E60A280083E163 /* RecipeURL.swift */; };
+		01DB31DA22E60A460083E163 /* RecipeDetailsURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB31D922E60A460083E163 /* RecipeDetailsURL.swift */; };
+		01DB323422E62AC60083E163 /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 01DB322F22E62AC60083E163 /* Recipes.json */; };
+		01DB323522E62AC60083E163 /* FakeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB323022E62AC60083E163 /* FakeResponse.swift */; };
+		01DB323722E62AC60083E163 /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB323222E62AC60083E163 /* FakeResponseData.swift */; };
+		01DB323822E62AC60083E163 /* YummlySessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB323322E62AC60083E163 /* YummlySessionFake.swift */; };
+		01DB324122E62C880083E163 /* YummlyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB323A22E62C870083E163 /* YummlyService.swift */; };
+		01DB324222E62C880083E163 /* YummlySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB323B22E62C870083E163 /* YummlySession.swift */; };
+		01DB324522E62C880083E163 /* YummlyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB323E22E62C880083E163 /* YummlyProtocol.swift */; };
+		01DB324822E62CCC0083E163 /* YummlySessionTestsCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DB324722E62CCC0083E163 /* YummlySessionTestsCase.swift */; };
+		01DB324A22E6451B0083E163 /* RecipeDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 01DB324922E6451B0083E163 /* RecipeDetails.json */; };
+		3ECA29C1521906BCCAB8FE5B /* Pods_Recipit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 134E1C3C4464B20AC987B128 /* Pods_Recipit.framework */; };
+		AB547BF7409DF775B204FFE5 /* Pods_RecipitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F8462F04F636C8D6234DBE /* Pods_RecipitTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		018BE81122E234F700F530EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 018BE79922E204D700F530EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 018BE7A022E204D700F530EE;
+			remoteInfo = Recipit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		018BE7A122E204D700F530EE /* Recipit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		018BE7A422E204D700F530EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		018BE7AE22E204D900F530EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		018BE7B122E204D900F530EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		018BE7B322E204D900F530EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		018BE7BB22E2054100F530EE /* Reciplease.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reciplease.xcdatamodel; sourceTree = "<group>"; };
+		018BE7BE22E2054100F530EE /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		018BE7C422E2055E00F530EE /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		018BE7C622E2055E00F530EE /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		018BE7CC22E2058600F530EE /* FavoriteSelectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteSelectedViewController.swift; sourceTree = "<group>"; };
+		018BE7CD22E2058600F530EE /* RecipeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListViewController.swift; sourceTree = "<group>"; };
+		018BE7CE22E2058600F530EE /* FavoritesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
+		018BE7CF22E2058600F530EE /* RecipeSelectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeSelectedViewController.swift; sourceTree = "<group>"; };
+		018BE7D022E2058600F530EE /* RecipeWeb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeWeb.swift; sourceTree = "<group>"; };
+		018BE7D122E2058600F530EE /* WhatSInYourFridgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatSInYourFridgeViewController.swift; sourceTree = "<group>"; };
+		018BE7DE22E20B6E00F530EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		018BE80422E2156500F530EE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		018BE80622E215BA00F530EE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		018BE80C22E234F700F530EE /* RecipitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		018BE81022E234F700F530EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01DB31D322E6099A0083E163 /* RecipesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesData.swift; sourceTree = "<group>"; };
+		01DB31D522E609CE0083E163 /* RecipeDetailsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsData.swift; sourceTree = "<group>"; };
+		01DB31D722E60A280083E163 /* RecipeURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeURL.swift; sourceTree = "<group>"; };
+		01DB31D922E60A460083E163 /* RecipeDetailsURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsURL.swift; sourceTree = "<group>"; };
+		01DB322F22E62AC60083E163 /* Recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
+		01DB323022E62AC60083E163 /* FakeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeResponse.swift; sourceTree = "<group>"; };
+		01DB323222E62AC60083E163 /* FakeResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
+		01DB323322E62AC60083E163 /* YummlySessionFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YummlySessionFake.swift; sourceTree = "<group>"; };
+		01DB323A22E62C870083E163 /* YummlyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YummlyService.swift; sourceTree = "<group>"; };
+		01DB323B22E62C870083E163 /* YummlySession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YummlySession.swift; sourceTree = "<group>"; };
+		01DB323E22E62C880083E163 /* YummlyProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YummlyProtocol.swift; sourceTree = "<group>"; };
+		01DB324722E62CCC0083E163 /* YummlySessionTestsCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YummlySessionTestsCase.swift; sourceTree = "<group>"; };
+		01DB324922E6451B0083E163 /* RecipeDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RecipeDetails.json; sourceTree = "<group>"; };
+		0949E688C44B0971F2F490B0 /* Pods-Recipit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipit.debug.xcconfig"; path = "Target Support Files/Pods-Recipit/Pods-Recipit.debug.xcconfig"; sourceTree = "<group>"; };
+		134E1C3C4464B20AC987B128 /* Pods_Recipit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recipit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81F8462F04F636C8D6234DBE /* Pods_RecipitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E93236EE0110ECC644A1AF /* Pods-RecipitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipitTests.debug.xcconfig"; path = "Target Support Files/Pods-RecipitTests/Pods-RecipitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8479181B9ECBE63636C3393F /* Pods-RecipitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipitTests.release.xcconfig"; path = "Target Support Files/Pods-RecipitTests/Pods-RecipitTests.release.xcconfig"; sourceTree = "<group>"; };
+		9846E5278C3D3FCC03E21806 /* Pods-Recipit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipit.release.xcconfig"; path = "Target Support Files/Pods-Recipit/Pods-Recipit.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		018BE79E22E204D700F530EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018BE80522E2156500F530EE /* WebKit.framework in Frameworks */,
+				3ECA29C1521906BCCAB8FE5B /* Pods_Recipit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018BE80922E234F700F530EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB547BF7409DF775B204FFE5 /* Pods_RecipitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		018BE79822E204D700F530EE = {
+			isa = PBXGroup;
+			children = (
+				018BE7A322E204D700F530EE /* Recipit */,
+				018BE80D22E234F700F530EE /* RecipitTests */,
+				018BE7A222E204D700F530EE /* Products */,
+				19DB3EAA41C4E027526CE3CE /* Pods */,
+				335C4363CD12597F58391172 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		018BE7A222E204D700F530EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				018BE7A122E204D700F530EE /* Recipit.app */,
+				018BE80C22E234F700F530EE /* RecipitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		018BE7A322E204D700F530EE /* Recipit */ = {
+			isa = PBXGroup;
+			children = (
+				018BE7A422E204D700F530EE /* AppDelegate.swift */,
+				018BE7AE22E204D900F530EE /* Assets.xcassets */,
+				018BE7B022E204D900F530EE /* LaunchScreen.storyboard */,
+				018BE7B322E204D900F530EE /* Info.plist */,
+				018BE7B922E2052E00F530EE /* Model */,
+				018BE7C322E2055000F530EE /* View */,
+				018BE7CB22E2057400F530EE /* Controller */,
+			);
+			path = Recipit;
+			sourceTree = "<group>";
+		};
+		018BE7B922E2052E00F530EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01DB31D122E609660083E163 /* CoreData */,
+				01DB31D022E609440083E163 /* Recipes */,
+				01DB31CF22E609350083E163 /* RecipeDetails */,
+				01DB323A22E62C870083E163 /* YummlyService.swift */,
+				01DB323B22E62C870083E163 /* YummlySession.swift */,
+				01DB323E22E62C880083E163 /* YummlyProtocol.swift */,
+				018BE80622E215BA00F530EE /* Extensions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		018BE7C322E2055000F530EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				018BE7DF22E20B6E00F530EE /* Main.storyboard */,
+				018BE7C422E2055E00F530EE /* FavoriteTableViewCell.swift */,
+				018BE7C622E2055E00F530EE /* RecipeTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		018BE7CB22E2057400F530EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				01DB324C22E723780083E163 /* SearchRecipes */,
+				01DB324B22E723690083E163 /* FavoriteRecipes */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		018BE80D22E234F700F530EE /* RecipitTests */ = {
+			isa = PBXGroup;
+			children = (
+				01DB322F22E62AC60083E163 /* Recipes.json */,
+				01DB324922E6451B0083E163 /* RecipeDetails.json */,
+				01DB323322E62AC60083E163 /* YummlySessionFake.swift */,
+				01DB323022E62AC60083E163 /* FakeResponse.swift */,
+				01DB323222E62AC60083E163 /* FakeResponseData.swift */,
+				01DB324722E62CCC0083E163 /* YummlySessionTestsCase.swift */,
+				018BE81022E234F700F530EE /* Info.plist */,
+			);
+			path = RecipitTests;
+			sourceTree = "<group>";
+		};
+		01DB31CF22E609350083E163 /* RecipeDetails */ = {
+			isa = PBXGroup;
+			children = (
+				01DB31D522E609CE0083E163 /* RecipeDetailsData.swift */,
+				01DB31D922E60A460083E163 /* RecipeDetailsURL.swift */,
+			);
+			path = RecipeDetails;
+			sourceTree = "<group>";
+		};
+		01DB31D022E609440083E163 /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				01DB31D322E6099A0083E163 /* RecipesData.swift */,
+				01DB31D722E60A280083E163 /* RecipeURL.swift */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		01DB31D122E609660083E163 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				018BE7BE22E2054100F530EE /* Recipe.swift */,
+				018BE7BA22E2054100F530EE /* Recipit.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		01DB324B22E723690083E163 /* FavoriteRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				018BE7CE22E2058600F530EE /* FavoritesListViewController.swift */,
+				018BE7CC22E2058600F530EE /* FavoriteSelectedViewController.swift */,
+			);
+			path = FavoriteRecipes;
+			sourceTree = "<group>";
+		};
+		01DB324C22E723780083E163 /* SearchRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				018BE7D122E2058600F530EE /* WhatSInYourFridgeViewController.swift */,
+				018BE7CD22E2058600F530EE /* RecipeListViewController.swift */,
+				018BE7CF22E2058600F530EE /* RecipeSelectedViewController.swift */,
+				018BE7D022E2058600F530EE /* RecipeWeb.swift */,
+			);
+			path = SearchRecipes;
+			sourceTree = "<group>";
+		};
+		19DB3EAA41C4E027526CE3CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0949E688C44B0971F2F490B0 /* Pods-Recipit.debug.xcconfig */,
+				9846E5278C3D3FCC03E21806 /* Pods-Recipit.release.xcconfig */,
+				83E93236EE0110ECC644A1AF /* Pods-RecipitTests.debug.xcconfig */,
+				8479181B9ECBE63636C3393F /* Pods-RecipitTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		335C4363CD12597F58391172 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				018BE80422E2156500F530EE /* WebKit.framework */,
+				134E1C3C4464B20AC987B128 /* Pods_Recipit.framework */,
+				81F8462F04F636C8D6234DBE /* Pods_RecipitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		018BE7A022E204D700F530EE /* Recipit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 018BE7B622E204D900F530EE /* Build configuration list for PBXNativeTarget "Recipit" */;
+			buildPhases = (
+				F478C4981EC97F10BE4DCD29 /* [CP] Check Pods Manifest.lock */,
+				018BE79D22E204D700F530EE /* Sources */,
+				018BE79E22E204D700F530EE /* Frameworks */,
+				018BE79F22E204D700F530EE /* Resources */,
+				A32DF8AC93CDC32127B885AD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Recipit;
+			productName = Recipit;
+			productReference = 018BE7A122E204D700F530EE /* Recipit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		018BE80B22E234F700F530EE /* RecipitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 018BE81322E234F700F530EE /* Build configuration list for PBXNativeTarget "RecipitTests" */;
+			buildPhases = (
+				250FEB409238AD61D7F96FB3 /* [CP] Check Pods Manifest.lock */,
+				018BE80822E234F700F530EE /* Sources */,
+				018BE80922E234F700F530EE /* Frameworks */,
+				018BE80A22E234F700F530EE /* Resources */,
+				1CD58343294B6654A534B6B8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				018BE81222E234F700F530EE /* PBXTargetDependency */,
+			);
+			name = RecipitTests;
+			productName = RecipitTests;
+			productReference = 018BE80C22E234F700F530EE /* RecipitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		018BE79922E204D700F530EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Maxime Bontemps";
+				TargetAttributes = {
+					018BE7A022E204D700F530EE = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					018BE80B22E234F700F530EE = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+						TestTargetID = 018BE7A022E204D700F530EE;
+					};
+				};
+			};
+			buildConfigurationList = 018BE79C22E204D700F530EE /* Build configuration list for PBXProject "Recipit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 018BE79822E204D700F530EE;
+			productRefGroup = 018BE7A222E204D700F530EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				018BE7A022E204D700F530EE /* Recipit */,
+				018BE80B22E234F700F530EE /* RecipitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		018BE79F22E204D700F530EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018BE7B222E204D900F530EE /* LaunchScreen.storyboard in Resources */,
+				018BE7DD22E20B6E00F530EE /* Main.storyboard in Resources */,
+				018BE7AF22E204D900F530EE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018BE80A22E234F700F530EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01DB324A22E6451B0083E163 /* RecipeDetails.json in Resources */,
+				01DB323422E62AC60083E163 /* Recipes.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CD58343294B6654A534B6B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecipitTests/Pods-RecipitTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecipitTests/Pods-RecipitTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RecipitTests/Pods-RecipitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		250FEB409238AD61D7F96FB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecipitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A32DF8AC93CDC32127B885AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Recipit/Pods-Recipit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Recipit/Pods-Recipit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Recipit/Pods-Recipit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F478C4981EC97F10BE4DCD29 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Recipit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		018BE79D22E204D700F530EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018BE7D322E2058600F530EE /* RecipeListViewController.swift in Sources */,
+				01DB31DA22E60A460083E163 /* RecipeDetailsURL.swift in Sources */,
+				018BE7BF22E2054100F530EE /* Recipit.xcdatamodeld in Sources */,
+				018BE7D422E2058600F530EE /* FavoritesListViewController.swift in Sources */,
+				018BE7A522E204D700F530EE /* AppDelegate.swift in Sources */,
+				018BE7D522E2058600F530EE /* RecipeSelectedViewController.swift in Sources */,
+				01DB324522E62C880083E163 /* YummlyProtocol.swift in Sources */,
+				018BE7D222E2058600F530EE /* FavoriteSelectedViewController.swift in Sources */,
+				01DB31D422E6099A0083E163 /* RecipesData.swift in Sources */,
+				018BE7C222E2054100F530EE /* Recipe.swift in Sources */,
+				01DB31D622E609CE0083E163 /* RecipeDetailsData.swift in Sources */,
+				018BE7D722E2058600F530EE /* WhatSInYourFridgeViewController.swift in Sources */,
+				018BE7C722E2055E00F530EE /* FavoriteTableViewCell.swift in Sources */,
+				018BE7C922E2055E00F530EE /* RecipeTableViewCell.swift in Sources */,
+				01DB324222E62C880083E163 /* YummlySession.swift in Sources */,
+				01DB324122E62C880083E163 /* YummlyService.swift in Sources */,
+				018BE7D622E2058600F530EE /* RecipeWeb.swift in Sources */,
+				01DB31D822E60A280083E163 /* RecipeURL.swift in Sources */,
+				018BE80722E215BA00F530EE /* Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		018BE80822E234F700F530EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01DB323522E62AC60083E163 /* FakeResponse.swift in Sources */,
+				01DB323822E62AC60083E163 /* YummlySessionFake.swift in Sources */,
+				01DB323722E62AC60083E163 /* FakeResponseData.swift in Sources */,
+				01DB324822E62CCC0083E163 /* YummlySessionTestsCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		018BE81222E234F700F530EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 018BE7A022E204D700F530EE /* Recipit */;
+			targetProxy = 018BE81122E234F700F530EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		018BE7B022E204D900F530EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				018BE7B122E204D900F530EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		018BE7DF22E20B6E00F530EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				018BE7DE22E20B6E00F530EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		018BE7B422E204D900F530EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		018BE7B522E204D900F530EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		018BE7B722E204D900F530EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0949E688C44B0971F2F490B0 /* Pods-Recipit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67S7U56J26;
+				INFOPLIST_FILE = Recipit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maimebontemps.Recipit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		018BE7B822E204D900F530EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9846E5278C3D3FCC03E21806 /* Pods-Recipit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67S7U56J26;
+				INFOPLIST_FILE = Recipit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maimebontemps.Recipit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		018BE81422E234F700F530EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83E93236EE0110ECC644A1AF /* Pods-RecipitTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67S7U56J26;
+				INFOPLIST_FILE = RecipitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maimebontemps.RecipitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recipit.app/Recipit";
+			};
+			name = Debug;
+		};
+		018BE81522E234F700F530EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8479181B9ECBE63636C3393F /* Pods-RecipitTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67S7U56J26;
+				INFOPLIST_FILE = RecipitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maimebontemps.RecipitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Recipit.app/Recipit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		018BE79C22E204D700F530EE /* Build configuration list for PBXProject "Recipit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018BE7B422E204D900F530EE /* Debug */,
+				018BE7B522E204D900F530EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		018BE7B622E204D900F530EE /* Build configuration list for PBXNativeTarget "Recipit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018BE7B722E204D900F530EE /* Debug */,
+				018BE7B822E204D900F530EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		018BE81322E234F700F530EE /* Build configuration list for PBXNativeTarget "RecipitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018BE81422E234F700F530EE /* Debug */,
+				018BE81522E234F700F530EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		018BE7BA22E2054100F530EE /* Recipit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				018BE7BB22E2054100F530EE /* Reciplease.xcdatamodel */,
+			);
+			currentVersion = 018BE7BB22E2054100F530EE /* Reciplease.xcdatamodel */;
+			path = Recipit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 018BE79922E204D700F530EE /* Project object */;
+}
